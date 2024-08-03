@@ -15,7 +15,7 @@ GO
 EXEC master.dbo.sp_addlinkedserver
 @server = N'Serverless-Synapse',
 @srvproduct = N'',
-@provider = N'SQLOLEDB', -- You can also use SQLNCLI11
+@provider = N'SQLOLEDB', 
 @datasrc = N'tcp:amir-ws-ondemand.sql.azuresynapse.net,1433',
 @catalog = N'Amir_Test'
 
@@ -24,7 +24,7 @@ EXEC master.dbo.sp_addlinkedsrvlogin
 @useself = N'False',
 @locallogin = NULL,
 @rmtuser = N'Linked_Server_Username',
-@rmtpassword = 'Lydd808lydd808'
+@rmtpassword = 'xxxxxxxxx'
 
 EXEC master.dbo.sp_serveroption
 @server = N'Serverless-Synapse',
